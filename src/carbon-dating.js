@@ -26,7 +26,7 @@ function dateSample(sampleActivity) {
   }
 
   const k = 0.693 / HALF_LIFE_PERIOD;
-  const t = Math.log(MODERN_ACTIVITY / parsedActivity) / k;
+  const t = Math.log(MODERN_ACTIVITY / activity) / k;
   const result = Math.ceil(t);
 
   return result;
